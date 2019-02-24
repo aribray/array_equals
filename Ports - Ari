@@ -1,0 +1,22 @@
+# Determines if the two input arrays have the same count of elements
+# and the same integer values in the same exact order
+  # Author a method named array_equals that accepts two integer arrays as input parameters. The method should return true if the arrays contain the same count of elements, the element values in the array are the same and they are in the same exact order. Otherwise, the method should return false.
+
+def array_equals(array_1, array_2)
+  i = 0
+if (array_1 == [] && array_2 == []) || (array_1 == nil && array_2 == nil)
+  return true
+
+elsif  array_1 == nil || array_2 == nil || array_1 != array_2
+  return false   
+
+else array_1.length.times do
+  if array_1[i] == array_2[i]
+    i += 1
+  end
+end
+end
+if i == array_1.length
+return true
+  end
+end
